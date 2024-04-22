@@ -1,0 +1,104 @@
+body {
+  font-family: comic,sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10px;
+ background-color: #9e9e9e; /* Gri arka plan rengi */
+}
+
+h2, p {
+  text-align: center;
+}
+
+.oyun-alani {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 75%; /* Kartlar sayfanın 3/4'ünü kaplayacak şekilde */
+}
+
+.kart-sira {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.kartlar {
+  flex: 1;
+}
+
+.kart {
+  width: 130px;
+  height: 150px;
+  background-color: lightgray;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  cursor: pointer;
+  transition: transform 0.2s; /* Dönme efekti için geçiş efekti ekle */
+box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.1); /* Gölgelendirme efekti */
+}
+
+.kart.donuyor {
+  animation: donme 1s infinite linear; /* Dönme animasyonunu etkinleştir */
+}
+
+@keyframes donme {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
+.tum-oranlar {
+  margin-top: 20px;
+}
+
+.tum-oranlar h3 {
+  margin-top: 0;
+}
+
+.tum-oranlar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.tum-oranlar ul li {
+  margin-bottom: 10px;
+}
+
+#hepsiniCevirBtn {
+  margin-top: 20px;
+  font-size: 16px;
+  padding: 10px 20px;
+  cursor: pointer;
+box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1); /* Gölgelendirme efekti */
+}
+/* styles.css */
+.kart.siyah {
+  background-color: black;
+  color: white;
+}
+
+.kart.yesil {
+  background-color: green;
+}
+
+.kart.mavi {
+  background-color: blue;
+}
+
+.kart.mor {
+  background-color: purple;
+}
+
+.kart.sari {
+  background-color: yellow;
+}
+
