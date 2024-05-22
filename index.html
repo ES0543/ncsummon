@@ -9,7 +9,15 @@
 <body>
   <h2>NightCrows Mount/Weapon Summon Game</h2>
   <p>Kaderini görmek için kartlara tıkla. / Нажмите на карты, чтобы узнать свою судьбу</p>
-  <div class="oyun-alani">
+
+  <!-- Game1 ve Game2 butonları -->
+  <div class="oyun-butonlari">
+    <button id="game1Btn" class="game-btn active">Sunset's Mount Summon 11x</button>
+    <button id="game2Btn" class="game-btn">Sunset's Splendid Mount Summon 11x</button>
+  </div>
+
+  <div class="oyun-alani" id="game1">
+    <!-- Oyun alanı buraya gelecek -->
     <div class="kart-sira">
       <div class="kartlar">
         <div class="kart">NightCrows</div>
@@ -29,18 +37,57 @@
         <div class="kart">NightCrows</div>
       </div>
     </div>
-    <button id="hepsiniCevirBtn">Hepsini Çevir</button>
+    <!-- Oranları gösteren metin -->
+    <div class="tum-oranlar">
+      <!-- Oranlar buraya gelecek -->
+      <h3>Oranlar:</h3>
+      <ul>
+        <li>Siyah / Black / Черный: 70.9456990%</li>
+        <li>Yeşil / Green / Зеленый: 27.5624824%</li>
+        <li>Mavi / Blue / Синий: 1.3229786%</li>
+        <li>Mor / Purple / Фиолетовый: 0.1587599%</li>
+        <li>Sarı / Yellow / Желтый: 0.0100800%</li>
+      </ul>
+    </div>
   </div>
-  <div class="tum-oranlar">
-    <h3>Tüm Oranlar ve Renkler / Все пропорции и цвета / Rates and Colors</h3>
-    <ul>
-      <li>70.9456990% - Siyah / черный / Black --> Common </li>
-      <li>27.5624824% - Yeşil / зеленый / Green --> Uncommon</li>
-      <li>1.3229786% - Mavi / синий / Blue --> Rare</li>
-      <li>0.1587599% - Mor / фиолетовый / Purple --> Epic</li>
-      <li>0.0100800% - Sarı / желтый / Yellow --> Legendary </li>
-    </ul>
+
+  <div class="oyun-alani" id="game2" style="display: none;">
+    <!-- Oyun alanı buraya gelecek -->
+    <div class="kart-sira">
+      <div class="kartlar">
+        <div class="kart">NightCrows</div>
+        <div class="kart">NightCrows</div>
+        <div class="kart">NightCrows</div>
+        <div class="kart">NightCrows</div>
+      </div>
+      <div class="kartlar">
+        <div class="kart">NightCrows</div>
+        <div class="kart">NightCrows</div>
+        <div class="kart">NightCrows</div>
+        <div class="kart">NightCrows</div>
+      </div>
+      <div class="kartlar">
+        <div class="kart">NightCrows</div>
+        <div class="kart">NightCrows</div>
+        <div class="kart">NightCrows</div>
+      </div>
+    </div>
+    <!-- Oranları gösteren metin -->
+    <div class="tum-oranlar">
+      <!-- Oranlar buraya gelecek -->
+      <h3>Oranlar:</h3>
+      <ul>
+        <li>Yeşil / Green / Зеленый: 95.6998564%</li>
+        <li>Mavi / Blue / Синий: 3.9701040%</li>
+        <li>Mor / Purple / Фиолетовый: 0.3200395%</li>
+        <li>Sarı / Yellow / Желтый: 0.0100000%</li>
+      </ul>
+    </div>
   </div>
+
+  <!-- Hepsini Çevir Butonu -->
+  <button id="hepsiniCevirBtn">Hepsini Çevir</button>
+
   <script src="script.js"></script>
 </body>
 </html>
