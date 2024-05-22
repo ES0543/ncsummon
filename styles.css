@@ -4,18 +4,30 @@ body {
   flex-direction: column;
   align-items: center;
   padding-top: 10px;
- background-color: #9e9e9e; /* Gri arka plan rengi */
+  background-color: #9e9e9e; /* Gri arka plan rengi */
 }
 
 h2, p {
   text-align: center;
 }
 
+.oyun-butonlari {
+  margin-bottom: 20px;
+}
+
+.game-btn {
+  font-size: 16px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.active {
+  background-color: #4CAF50; /* Yeşil */
+  color: white;
+}
+
 .oyun-alani {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 75%; /* Kartlar sayfanın 3/4'ünü kaplayacak şekilde */
+  display: none;
 }
 
 .kart-sira {
@@ -40,7 +52,7 @@ h2, p {
   font-size: 12px;
   cursor: pointer;
   transition: transform 0.2s; /* Dönme efekti için geçiş efekti ekle */
-box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.1); /* Gölgelendirme efekti */
+  box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.1); /* Gölgelendirme efekti */
 }
 
 .kart.donuyor {
@@ -56,31 +68,7 @@ box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.1); /* Gölgelendirme efekti */
   }
 }
 
-.tum-oranlar {
-  margin-top: 20px;
-}
-
-.tum-oranlar h3 {
-  margin-top: 0;
-}
-
-.tum-oranlar ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.tum-oranlar ul li {
-  margin-bottom: 10px;
-}
-
-#hepsiniCevirBtn {
-  margin-top: 20px;
-  font-size: 16px;
-  padding: 10px 20px;
-  cursor: pointer;
-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1); /* Gölgelendirme efekti */
-}
-/* styles.css */
+/* Renkler */
 .kart.siyah {
   background-color: black;
   color: white;
@@ -101,4 +89,3 @@ box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1); /* Gölgelendirme efekti */
 .kart.sari {
   background-color: yellow;
 }
-
